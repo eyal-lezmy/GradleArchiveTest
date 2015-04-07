@@ -6,8 +6,6 @@ import org.gradle.api.tasks.TaskAction
 class ArchiveTask extends Copy {
 
     ArchiveTask() {
-        from project.archivetest.from
-        into project.archivetest.into
     }
 
     @TaskAction
