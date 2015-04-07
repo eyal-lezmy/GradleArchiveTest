@@ -1,0 +1,13 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        maven { url uri('../../repo') }
+    }
+    dependencies {
+        classpath 'fr.eyal:archivetest:+'
+//        classpath 'org.codehaus.groovy:groovy-backports-compat23:2.+'
+    }
+}
+
+apply plugin: "archivetest"

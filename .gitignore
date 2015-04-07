@@ -1,0 +1,10 @@
+#IntelliJ
+.idea/
+*.iml
+
+#gradle
+.gradle
+build/
+
+#projet
+repo/

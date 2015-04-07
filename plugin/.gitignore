@@ -1,0 +1,13 @@
+#IntelliJ
+.idea/workspace.xml
+.idea/tasks.xml
+
+#gradle
+.gradle
+build/
+
+#default property file (DO NOT REMOVE THIS LINE)
+res/test/default.properties
+
+#removing temp folder if not deleted during tests
+temp/

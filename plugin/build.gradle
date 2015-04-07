@@ -1,0 +1,31 @@
+apply plugin: 'groovy'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+}
+
+group = 'fr.eyal'
+version = '0.1'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+
+            pom.artifactId = 'archivetest'
+            pom.groupId = project.group
+            pom.version = project.version
+        }
+    }
+}
